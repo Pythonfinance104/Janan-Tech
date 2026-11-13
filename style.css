@@ -1,169 +1,61 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  transition: smooth;
-  font-family: helvetica;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janan School of Tech | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <span class="brand-mark">J</span>
+        <div>
+          <p class="brand-name">Janan School of Tech</p>
+          <p class="brand-tag">Innovate • Create • Lead</p>
+        </div>
+      </div>
 
-:root {
-  --background: rgb(24, 24, 24);
-  --second-background: rgb(21, 21, 21);
-}
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-body.b1 {
-  background: var(--background);
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  text-wrap: wrap;
-}
+    <main class="page-main content-box">
+      <section>
+        <p class="eyebrow">Get in touch</p>
+        <h1 class="section-heading">Contact Us</h1>
+      </section>
 
-header.h-1 {
-  margin-top: 60px;
-  color: white;
-  font-size: 40px;
-  font-family: Arial;
-}
+      <section class="contact-layout">
+        <article class="contact-panel">
+          <h3>Reach out</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:johnmeals06@gmail.com">johnmeals06@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+256760571099">+256 760 571 099</a></li>
+            <li><strong>Location:</strong> Kyanja-Kampala, Uganda</li>
+          </ul>
+        </article>
 
-main {
-  margin-top: 10vh;
-  line-height: 5vh;
-  background: linear-gradient(to left, lawngreen, lightblue);
-  background-clip: text;
-  color: transparent;
-  word-spacing: normal;
-}
+        <article class="contact-panel">
+          <h3>Send a message</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Your name" aria-label="Your name" />
+            <input type="email" placeholder="Your email" aria-label="Your email" />
+            <textarea placeholder="How can we help?" aria-label="Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+      </section>
+    </main>
 
-#mission {
-  margin-top: 20px;
-}
-.cta-button {
-  margin-top: 10px;
-  font-size: 19px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 3px solid ghostwhite;
-  background: black;
-  color: white;
-  transition: background-color 2s;
-}
-
-footer {
-  margin-top: 50px;
-  background: linear-gradient(to left, lawngreen, red);
-  background-clip: text;
-  color: transparent;
-}
-
-.cta-button:hover {
-  background-color: ghostwhite;
-  color: black;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-header.h-1 nav li {
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: space-between;
-  padding-inline: 10px;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.h2 {
-  background: linear-gradient(to left, lawngreen, rgb(207, 24, 164));
-  background-clip: text;
-  color: transparent;
-}
-
-header p {
-  margin-top: 40px;
-
-  background: linear-gradient(to left, lawngreen, rgb(207, 24, 164));
-  background-clip: text;
-  color: transparent;
-}
-
-footer img {
-  width: 150px;
-  height: 170px;
-  border-radius: 50%;
-}
-
-.main div {
-  border: 2px solid palevioletred;
-  border-radius: 15px;
-  font-display: flex;
-  flex-direction: column;
-}
-div {
-  margin: 10px;
-  box-shadow: 0px 5px 5px rgb(207, 24, 164);
-  list-style: none;
-  font-display: flex;
-  flex-direction: column;
-}
-
-header.h-1 nav li a {
-  border-radius: 10px;
-  border: 3px solid ghostwhite;
-  background: black;
-  color: white;
-
-  transition: background-color 2s;
-  font-size: 25px;
-  padding: 10px;
-}
-
-header.h-1 nav li a:hover {
-  background-color: ghostwhite;
-  color: black;
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-#footer {
-  margin-bottom: 10px;
-}
-
-.contact {
-  font-size: 40px;
-}
-
-@media (max-width: 800px) {
-  body {
-    width: auto;
-    height: auto;
-  }
-
-  header.h-1 nav li {
-    display: flex;
-    flex-direction: column;
-    text-wrap: wrap;
-    width: fit-content;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    text-wrap: wrap;
-    width: fit-content;
-  }
-  header p {
-    display: flex;
-    text-wrap: wrap;
-    flex-direction: column;
-  }
-  #footer {
-    display: flex;
-    text-wrap: wrap;
-    flex-direction: column;
-  }
-}
+    <footer class="site-footer">
+      <p>&copy; 2025 Janan School of Tech. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
